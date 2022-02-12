@@ -1,0 +1,29 @@
+oil=500
+maggie=500
+chocolate=500
+dal=500
+sugar=600
+cname=input(' coustomer name')
+cnum=input('enter customer num')
+opq=int(input('enter no of oil packets'))
+mpq=int(input('enter no of maggie packets'))
+cho=int(input('enter no of chocolates'))
+dpq=int(input('enter no of dal packets'))
+spq=int(input('enter no of sugar packets'))
+bill=(oil*opq)+(maggie *mpq)+(chocolate*cho)+(dal*dpq)+(sugar*spq) 
+if bill>5000:
+     dis=bill*10/100
+     tax=bill*10/100
+elif bill>30:
+      dis=bill*8/100
+      tax=bill*10/100 
+elif bill>2000:
+      dis=bill*5/100
+      tax=bill*10/100
+elif bill>1000:
+      dis=bill*3/100
+      tax=bill*10/100
+else:
+    tax=bill*18/100
+mainbill=bill-dis+tax
+print ('bill amount:',mainbill)
