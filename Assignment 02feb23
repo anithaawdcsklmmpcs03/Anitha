@@ -1,0 +1,8 @@
+l=[]
+n=int(input('enter a no:'))
+for i in range(n):
+    x=int(input('list elements:'))
+    l.append(x)
+print(l)
+l.reverse()
+print(l)
