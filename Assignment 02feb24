@@ -1,0 +1,14 @@
+#seperate even and odd from list
+l=[]
+n=int(input('enter a no:'))
+for i in range(n):
+    x=int(input('list elements:'))
+    l.append(x)
+o=[]
+e=[]
+for i in range(n):
+    if l[i]%2==0:
+        e.append(l[i])
+    else:
+        o.append(l[i])
+print(o,' ',e)
